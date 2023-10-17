@@ -8,9 +8,16 @@ try: app_id = int(os.environ.get("app_id", "20268838"))
 except Exception as app_id: print(f"⚠️ App ID Invalid {app_id}")
 try: api_hash = os.environ.get("api_hash", "908e732e523a2fa88cb2599873c98eb1")
 except Exception as api_id: print(f"⚠️ Api Hash Invalid {api_hash}")
-try: bot_token = os.environ.get("bot_token", "6638886131:AAE2gB4ZC6649RpNIJmRO0GoqhMNhOXawF0")
+try: bot_token = os.environ.get("bot_token", "6631800327:AAEX-fEC7DHLYgnO-i8r7BEvhkAoMIxL87Q")
 except Exception as bot_token: print(f"⚠️ Bot Token Invalid {bot_token}")
-try: custom_caption = os.environ.get("custom_caption", "`{file_name}`JOIN:@pcnewmoviez")
+try: custom_caption = os.environ.get("custom_caption", """ 
+<b>══════════════════
+🗂 {file_name}
+═══════════════════ 
+𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐇𝐄𝐑𝐄 👇
+╔══════════════════╗         
+    <a href="https://t.me/pcnewmoviez">🔱 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🔱</a>
+╚══════════════════╝</b>""")
 except Exception as custom_caption: print(f"⚠️ Custom Caption Invalid {custom_caption}")
 
 AutoCaptionBotV1 = pyrogram.Client(
