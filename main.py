@@ -12,11 +12,11 @@ try: bot_token = os.environ.get("bot_token", "6631800327:AAEX-fEC7DHLYgnO-i8r7BE
 except Exception as bot_token: print(f"⚠️ Bot Token Invalid {bot_token}")
 try: custom_caption = os.environ.get("custom_caption", """ 
 <b>══════════════════
-🗂 {file_name}
+🗂 LMNOPQMOVIES {file_name}
 ═══════════════════ 
 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐇𝐄𝐑𝐄 👇
 ╔══════════════════╗         
-    <a href="https://t.me/pcnewmoviez">🔱 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🔱</a>
+    <a href="https://t.me/hdlinks4uu">🔱 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🔱</a>
 ╚══════════════════╝</b>""")
 except Exception as custom_caption: print(f"⚠️ Custom Caption Invalid {custom_caption}")
 
