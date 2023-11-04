@@ -11,13 +11,7 @@ except Exception as api_id: print(f"⚠️ Api Hash Invalid {api_hash}")
 try: bot_token = os.environ.get("bot_token", "6631800327:AAEX-fEC7DHLYgnO-i8r7BEvhkAoMIxL87Q")
 except Exception as bot_token: print(f"⚠️ Bot Token Invalid {bot_token}")
 try: custom_caption = os.environ.get("custom_caption", """ 
-<b>══════════════════
-🗂 LMNOPQMOVIES {file_name}
-═══════════════════ 
-𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐇𝐄𝐑𝐄 👇
-╔══════════════════╗         
-    <a href="https://t.me/hdlinks4uu">🔱 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🔱</a>
-╚══════════════════╝</b>""")
+<b>{file_name} ~ @HP_MOVIES_WORLD</b>""")
 except Exception as custom_caption: print(f"⚠️ Custom Caption Invalid {custom_caption}")
 
 AutoCaptionBotV1 = pyrogram.Client(
@@ -30,12 +24,11 @@ start_message = """
 <b>@pcnewmoviez</b>"""
 
 about_message = """
-<b>• Name : <a href=https://t.me/parshucr>PC MOVIEZ AutoCaption</a></b>
-<b>• Developer : <a href=https://t.me/parshucr>[PC MOVIEZ]</a></b>
+<b>• Name : <a href=https://t.me/badal6667rai>AutoCaption</a></b>
+<b>• Developer : <a href=https://t.me/khandudon302>[PC MOVIEZ]</a></b>
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/pcnewmoviez>Click Here</a></b>
-<b>• Source Code : <a href=https://github.com/parshucr123/PC-CAPTION>Click Here</a></b>"""
+<b>• Updates : <a href=https://t.me/badal6667rai>Click Here</a></b>"""
 
 @AutoCaptionBotV1.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
 def start_command(bot, update):
